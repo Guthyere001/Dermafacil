@@ -72,10 +72,12 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   color: #666;
+  font-weight: bolder;
 }
 
 .nav-btn:hover,
 .nav-btn.active {
+  font-weight: bolder;
   background: #e8f5e8;
   color: #4caf50;
 }
