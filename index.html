@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DermaFácil - Cuidados Dermatológicos de Excelência</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span>DermaFácil</span>
+                </div>
+                <h1>DermaFácil</h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <button class="nav-btn active" data-section="home">Início</button>
+                <button class="nav-btn" data-section="professionals">Profissionais</button>
+                <button class="nav-btn" data-section="medications">Medicamentos</button>
+                <button class="nav-btn" data-section="contact">Contato</button>
+            </nav>
+
+            <div class="header-actions">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile">
+            <button class="nav-btn-mobile active" data-section="home">Início</button>
+            <button class="nav-btn-mobile" data-section="professionals">Profissionais</button>
+            <button class="nav-btn-mobile" data-section="medications">Medicamentos</button>
+            <button class="nav-btn-mobile" data-section="contact">Contato</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <!-- Hero Section -->
+            <div class="hero">
+                <h2 class="hero-title">
+                    Cuidados Dermatológicos
+                    <span class="hero-highlight">de Excelência</span>
+                </h2>
+                <p class="hero-description">
+                    Encontre os melhores dermatologistas e produtos para cuidar da sua pele com segurança e qualidade.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" data-section="professionals">Ver Profissionais</button>
+                    <button class="btn btn-outline" data-section="medications">Explorar Produtos</button>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Profissionais Qualificados</h3>
+                    <p>Dermatologistas experientes com anos de formação e especialização.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Avaliações Reais</h3>
+                    <p>Sistema de avaliação com estrelas baseado em experiências reais dos pacientes.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon purple">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Localização Fácil</h3>
+                    <p>Encontre profissionais e farmácias próximas a você com geolocalização.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professionals Section -->
+        <section id="professionals" class="section">
+            <div class="section-header">
+                <h2>Nossos Profissionais</h2>
+                <p>Conheça nossa equipe de dermatologistas especializados, com anos de experiência e excelentes avaliações.</p>
+            </div>
+
+            <div class="professionals-grid" id="professionals-grid">
+                <!-- Professionals will be loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Medications Section -->
+        <section id="medications" class="section">
+            <div class="section-header">
+                <h2>Medicamentos e Produtos</h2>
+                <p>Encontre os melhores produtos dermatológicos com preços competitivos e entrega rápida.</p>
+            </div>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar medicamentos..." id="medication-search">
+                </div>
+            </div>
+
+            <div class="medications-grid" id="medications-grid">
+                <!-- Medications will be loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Tem dúvidas? Entre em contato conosco. Estamos aqui para ajudar com seus cuidados dermatológicos.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Rua das Flores, 123 - Centro, São Paulo - SP</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Segunda a Sexta: 8h às 18h</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(11) 1234-5678</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contato@dermafacil.com.br</span>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="contact-form">
+                        <input type="text" placeholder="Seu nome" required>
+                        <input type="email" placeholder="Seu email" required>
+                        <textarea placeholder="Sua mensagem" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span>DermaFácil</span>
+                </div>
+                <h3>DermaFácil</h3>
+            </div>
+            <p class="footer-description">Cuidando da sua pele com excelência e dedicação.</p>
+            <p class="footer-copyright">© 2025 DermaFácil. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Carrinho de Compras</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body" id="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <div class="cart-total" id="cart-total">Total: R$ 0,00</div>
+                <button class="btn btn-primary" id="checkout-btn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
